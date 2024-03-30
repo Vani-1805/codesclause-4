@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam System</title>
+</head>
+<body>
+    <h1>Exam System</h1>
+
+    <!-- Admin functionalities -->
+    <h2>Admin</h2>
+    <form id="setExamForm">
+        <label for="examName">Exam Name:</label>
+        <input type="text" id="examName" name="examName" required>
+        <button type="submit">Set Exam</button>
+    </form>
+
+    <!-- Student functionalities -->
+    <h2>Student</h2>
+    <form id="fillExamForm">
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" name="studentName" required>
+        <label for="examSelect">Select Exam:</label>
+        <select id="examSelect" name="examSelect" required>
+            <!-- Dynamically populate with available exams -->
+        </select>
+        <button type="submit">Fill Exam Form</button>
+    </form>
+
+    <button id="downloadHallTicket">Download Hall Ticket</button>
+
+    <!-- Scripts -->
+    <script>
+        // Code for interacting with the server using JavaScript (e.g., fetch API) would go here
+    </script>
+</body>
+</html>
